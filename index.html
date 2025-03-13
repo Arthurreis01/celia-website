@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beauty Celia Lyra USA Corp</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" 
+    rel="stylesheet"
+  >
+  <!-- Bootstrap Icons (CDN) -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  >
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <nav class="navbar">
+      <!-- Left: Name -->
+      <div class="nav-left">
+        <span class="nav-name">Celia Lyra</span>
+      </div>
+      
+      <!-- Center: Logo Image -->
+      <div class="nav-center">
+        <!-- Replace 'logo.png' with your actual logo file -->
+        <img src="logo.png" alt="Logo" class="nav-logo"/>
+      </div>
+      
+      <!-- Right: Nav Links -->
+      <div class="nav-right">
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Multi-Step Animated Background -->
+  <section class="hero">
+    <div class="hero-animated-bg"></div>
+    <div class="hero-content">
+      <h1>Enhance Your Natural Beauty</h1>
+      <p>High-quality aesthetic and cosmetic services, tailored just for you.</p>
+      <!-- CTA to WhatsApp -->
+      <a 
+        href="https://api.whatsapp.com/send?phone=XXXXXXXXXXX" 
+        class="btn-primary" 
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Contact via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Wave Shape Divider (transition to About) -->
+  <div class="wave-shape">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <!-- Fill matches the About section background (#fff by default) -->
+      <path fill="#fff" d="M0,224L48,213.3C96,203,192,181,288,165.3C384,149,480,139,576,154.7C672,171,768,213,864,197.3C960,181,1056,107,1152,101.3C1248,96,1344,160,1392,192L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+    </svg>
+  </div>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-wrapper">
+      <div class="about-content">
+        <h2>About Beauty Celia Lyra USA Corp</h2>
+        <p>
+          We specialize in enhancing your natural beauty through modern and 
+          advanced techniques. Our goal is to deliver personalized treatments 
+          that suit your individual style—whether you prefer a subtle refresh 
+          or a more dramatic transformation.
+        </p>
+        <p>
+          From eyelashes and eyebrows to skincare and body contour, we offer a 
+          range of services to help you look and feel your best.
+        </p>
+      </div>
+      <div class="about-image">
+        <!-- Replace with a real image -->
+        <img src="https://via.placeholder.com/400x400" alt="About Celia Lyra">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section (One horizontal infinite carousel, full page width) -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <p>Explore our variety of specialized beauty treatments.</p>
+
+    <div class="carousel-container">
+      <!-- Left Arrow -->
+      <button class="carousel-btn carousel-btn-left" id="prevBtn">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+
+      <!-- Single track for infinite scroll, spanning full width -->
+      <div class="carousel-track" id="carouselTrack">
+        <!-- 10 original items, each 220px wide, 5 visible at once on large screens -->
+        <div class="service-card"> 
+          <h3>Eyelash Extensions</h3>
+          <p>Increase length & volume of natural lashes, tailored to preference.</p>
+        </div>
+        <div class="service-card">
+          <h3>Eyebrow Lamination & Design</h3>
+          <p>Shape & set brow hairs for a fuller look, often with Henna.</p>
+        </div>
+        <div class="service-card">
+          <h3>Eyebrow Design with Henna</h3>
+          <p>Similar to lamination, emphasizes Henna for color & sculpted shape.</p>
+        </div>
+        <div class="service-card">
+          <h3>Facial Hair Removal</h3>
+          <p>Waxing for upper lip, mustache area, & more for smooth skin.</p>
+        </div>
+        <div class="service-card">
+          <h3>Waxing Services</h3>
+          <p>Full-face or full-body waxing for silky, hair-free skin.</p>
+        </div>
+        <div class="service-card">
+          <h3>Eyebrow Reconstruction</h3>
+          <p>Advanced microblading or micropigmentation to reshape brows.</p>
+        </div>
+        <div class="service-card">
+          <h3>Skincare Services</h3>
+          <p>Cleansing, moisturizing, microdermabrasion, microneedling, etc.</p>
+        </div>
+        <div class="service-card">
+          <h3>Tanning</h3>
+          <p>Spray tanning or tanning bed services for a sun-kissed glow.</p>
+        </div>
+        <div class="service-card">
+          <h3>Body Sculpting</h3>
+          <p>Lymphatic drainage or wraps to help contour the body.</p>
+        </div>
+        <div class="service-card">
+          <h3>Lash Lift</h3>
+          <p>Curl & lift natural lashes for a more open-eyed look.</p>
+        </div>
+      </div>
+
+      <!-- Right Arrow -->
+      <button class="carousel-btn carousel-btn-right" id="nextBtn">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contact Section with Instagram & Map -->
+  <section class="contact" id="contact">
+    <div class="section-content">
+      <h2>Contact Us</h2>
+      <p>Reach out for more information or to book an appointment.</p>
+
+      <!-- Buttons for Instagram & Map Link -->
+      <div class="contact-buttons">
+        <a 
+          href="https://instagram.com/YourProfile" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="btn-social"
+        >
+          <i class="bi bi-instagram"></i> Follow on Instagram
+        </a>
+        <a 
+          href="https://goo.gl/maps/YourGoogleMapLocation" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="btn-social"
+        >
+          <i class="bi bi-geo-alt-fill"></i> Find Us on Map
+        </a>
+      </div>
+
+      <!-- Embedded Google Map -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=..." 
+          width="100%" 
+          height="350" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Beauty Celia Lyra USA Corp. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

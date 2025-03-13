@@ -128,7 +128,7 @@ body {
   overflow: hidden;
 }
 
-/* Multi-step Animated radial gradient */
+/* Simpler, two-step radial gradient with a 20s animation */
 .hero-animated-bg {
   position: absolute;
   top: 0;
@@ -136,7 +136,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  animation: heroGradient 12s infinite alternate ease-in-out;
+  animation: heroGradient 20s infinite alternate ease-in-out;
 }
 
 @keyframes heroGradient {
@@ -147,32 +147,11 @@ body {
       var(--color-brown-light) 100%
     );
   }
-  25% {
-    background: radial-gradient(
-      circle at 20% 20%, 
-      var(--color-brown-light) 0%, 
-      var(--color-brown-dark) 100%
-    );
-  }
-  50% {
-    background: radial-gradient(
-      circle at 80% 50%, 
-      var(--color-brown-dark) 0%, 
-      var(--color-brown-light) 100%
-    );
-  }
-  75% {
-    background: radial-gradient(
-      circle at 50% 80%, 
-      var(--color-brown-light) 0%, 
-      var(--color-brown-dark) 100%
-    );
-  }
   100% {
     background: radial-gradient(
-      circle at 30% 70%, 
-      var(--color-brown-dark) 0%, 
-      var(--color-brown-light) 100%
+      circle at 0% 100%, 
+      var(--color-brown-light) 0%, 
+      var(--color-brown-dark) 100%
     );
   }
 }
@@ -224,7 +203,6 @@ body {
 .about {
   background-color: #fff;
 }
-
 .about-wrapper {
   display: flex;
   align-items: center;
@@ -235,11 +213,9 @@ body {
   padding: 4rem 2rem;
   text-align: left;
 }
-
 .about-content {
   flex: 1;
 }
-
 .about-content h2 {
   font-family: var(--font-heading);
   font-size: 2rem;
@@ -256,6 +232,7 @@ body {
 }
 .about-image img {
   width: 100%;
+  height: 500px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -285,7 +262,8 @@ body {
   display: flex;
   gap: 1rem;
   padding: 1rem;
-  /* We'll handle infinite effect via JS clones */
+  /* Smoother transition for the infinite scroll */
+  transition: transform 0.8s ease-in-out;
 }
 .service-card {
   flex: 0 0 auto;

@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Beauty Celia Lyra USA Corp</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css"/>
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,31 +15,21 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" 
     rel="stylesheet"
   >
+
   <!-- Bootstrap Icons (CDN) -->
   <link 
     rel="stylesheet" 
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
   >
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
   <!-- Header / Navigation -->
   <header class="header">
     <nav class="navbar">
-      <!-- Left: Name -->
       <div class="nav-left">
         <span class="nav-name">Celia Lyra</span>
       </div>
-      
-      <!-- Center: Logo Image -->
-      <div class="nav-center">
-        <!-- Replace 'logo.png' with your actual logo file -->
-        <img src="https://via.placeholder.com/120x50" alt="Logo" class="nav-logo"/>
-      </div>
-      
-      <!-- Right: Nav Links -->
       <div class="nav-right">
         <div class="nav-toggle" id="navToggle">
           <span></span>
@@ -43,8 +37,9 @@
           <span></span>
         </div>
         <ul class="nav-links" id="navLinks">
-          <li><a href="#about">About</a></li>
+          <li><a href="#why-choose-us">About Us</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -53,126 +48,242 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-animated-bg"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Enhance Your Natural Beauty</h1>
-      <p>High-quality aesthetic and cosmetic services, tailored just for you.</p>
-      <!-- CTA to WhatsApp -->
-      <a 
-        href="https://api.whatsapp.com/send?phone=XXXXXXXXXXX" 
-        class="btn-primary" 
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Contact via WhatsApp
-      </a>
-    </div>
-  </section>
-
-  <!-- Wave Shape Divider (transition to About) -->
-  <div class="wave-shape">
-    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <!-- Fill matches the About section background (#fff by default) -->
-      <path fill="#fff" d="M0,224L48,213.3C96,203,192,181,288,165.3C384,149,480,139,576,154.7C672,171,768,213,864,197.3C960,181,1056,107,1152,101.3C1248,96,1344,160,1392,192L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-    </svg>
-  </div>
-
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="about-wrapper">
-      <div class="about-content">
-        <h2>About Beauty Celia Lyra USA Corp</h2>
-        <p>
-          We specialize in enhancing your natural beauty through modern and 
-          advanced techniques. Our goal is to deliver personalized treatments 
-          that suit your individual style—whether you prefer a subtle refresh 
-          or a more dramatic transformation.
-        </p>
-        <p>
-          From eyelashes and eyebrows to skincare and body contour, we offer a 
-          range of services to help you look and feel your best.
-        </p>
-      </div>
-      <div class="about-image">
-        <!-- Replace with a real image -->
-        <img src="about.jpg" alt="About Celia Lyra">
+      <h1>Where Perfect Brows Begin</h1>
+      <p>Expert eyebrow shaping and aesthetic treatments for a naturally enhanced look.</p>
+      <div class="hero-ctas">
+        <!-- WhatsApp link with pre-filled text -->
+        <a 
+          href="https://wa.me/17543263041?text=Hello%2C%20I%27m%20interested%20in%20your%20services%21" 
+          class="btn-primary" 
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-whatsapp"></i> Book via WhatsApp
+        </a>
+        <a href="#services" class="btn-secondary">
+          View Our Services
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Services Section (Infinite Horizontal Carousel) -->
+  <!-- Why Choose Us (Icons + CEO Photo + Stats) -->
+  <section class="why-choose-us" id="why-choose-us">
+    <h2>Why Choose Us?</h2>
+
+    <!-- 3 Icon Cards -->
+    <div class="choose-icons-row">
+      <div class="choose-icon-card">
+        <i class="bi bi-award"></i>
+        <h3>9 Years of Experience</h3>
+        <p>
+          Our services combine passion, skill, and a dedicated team effort 
+          to enhance your natural beauty.
+        </p>
+      </div>
+      <div class="choose-icon-card">
+        <i class="bi bi-people-fill"></i>
+        <h3>We’re Professional</h3>
+        <p>
+          Our team delivers excellence with confidence, professionalism, 
+          and dedication to provide you with the best service.
+        </p>
+      </div>
+      <div class="choose-icon-card">
+        <i class="bi bi-globe2"></i>
+        <h3>International Certificates</h3>
+        <p>
+          With experience gained in different countries, our close-knit team 
+          brings advanced international techniques and expertise directly to you.
+        </p>
+      </div>
+    </div>
+
+    <!-- CEO Photo + Stats Row -->
+    <div class="choose-ceo-stats">
+      <img src="about.jpg" alt="CEO Photo" class="choose-ceo-img" />
+      <div class="choose-stats-row">
+        <div class="choose-stat-item">
+          <h4 class="choose-stat-number">9</h4>
+          <p>Years in the Beauty Industry</p>
+        </div>
+        <div class="choose-stat-item">
+          <h4 class="choose-stat-number">3</h4>
+          <p>Countries of Specialization</p>
+        </div>
+        <div class="choose-stat-item">
+          <h4 class="choose-stat-number">+200</h4>
+          <p>Satisfied Clients Worldwide</p>
+        </div>
+        <div class="choose-stat-item">
+          <h4 class="choose-stat-number">5</h4>
+          <p>Advanced Certifications</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
   <section class="services" id="services">
-    <h2>Our Services</h2>
-    <p>Explore our variety of specialized beauty treatments.</p>
-
-    <div class="carousel-container">
-      <!-- Left Arrow -->
-      <button class="carousel-btn carousel-btn-left" id="prevBtn">
-        <i class="bi bi-chevron-left"></i>
-      </button>
-
-      <!-- Single track for infinite scroll, spanning full width -->
-      <div class="carousel-track" id="carouselTrack">
-        <!-- 10 original items -->
-        <div class="service-card"> 
-          <h3>Eyelash Extensions</h3>
-          <p>Increase length & volume of natural lashes, tailored to preference.</p>
-        </div>
-        <div class="service-card">
-          <h3>Eyebrow Lamination & Design</h3>
-          <p>Shape & set brow hairs for a fuller look, often with Henna.</p>
-        </div>
-        <div class="service-card">
-          <h3>Eyebrow Design with Henna</h3>
-          <p>Similar to lamination, emphasizes Henna for color & sculpted shape.</p>
-        </div>
-        <div class="service-card">
-          <h3>Facial Hair Removal</h3>
-          <p>Waxing for upper lip, mustache area, & more for smooth skin.</p>
-        </div>
-        <div class="service-card">
-          <h3>Waxing Services</h3>
-          <p>Full-face or full-body waxing for silky, hair-free skin.</p>
-        </div>
-        <div class="service-card">
-          <h3>Eyebrow Reconstruction</h3>
-          <p>Advanced microblading or micropigmentation to reshape brows.</p>
-        </div>
-        <div class="service-card">
-          <h3>Skincare Services</h3>
-          <p>Cleansing, moisturizing, microdermabrasion, microneedling, etc.</p>
-        </div>
-        <div class="service-card">
-          <h3>Tanning</h3>
-          <p>Spray tanning or tanning bed services for a sun-kissed glow.</p>
-        </div>
-        <div class="service-card">
-          <h3>Body Sculpting</h3>
-          <p>Lymphatic drainage or wraps to help contour the body.</p>
-        </div>
-        <div class="service-card">
-          <h3>Lash Lift</h3>
-          <p>Curl & lift natural lashes for a more open-eyed look.</p>
+    <h2>Our Services &amp; Pricing</h2>
+    <p>Discover our range of specialized beauty treatments, each with a brief description and price.</p>
+    
+    <div class="services-grid">
+      <!-- Card 1: Micropigmentation / Microblading / Shadow -->
+      <div class="service-card">
+        <img src="service-microblading.jpg" alt="Micropigmentation / Microblading" class="service-photo"/>
+        <h4>Micropigmentation / Microblading / Shadow</h4>
+        <hr/>
+        <p class="service-description">
+          High-quality cosmetic treatments designed to enhance natural beauty 
+          and provide lasting results. Ideal for fuller brows, defined lips, 
+          or camouflaging scars &amp; stretch marks.
+        </p>
+        <div class="service-subitems">
+          <p><strong>Eyebrow Microblading</strong><br/>
+            Specialized procedure for enhancing and defining eyebrows with fine, hair-like strokes. 
+            <em>$600</em>
+          </p>
+          <p><strong>Lip Micropigmentation</strong><br/>
+            Cosmetic tattooing to enhance or redefine lip color and shape, giving a fuller look. 
+            <em>$500</em>
+          </p>
+          <p><strong>Scar Micropigmentation</strong><br/>
+            Pigment applied to scars to blend them with surrounding skin tone. 
+            <em>$600</em>
+          </p>
+          <p><strong>Stretch Mark Camouflage</strong><br/>
+            Minimizes stretch marks by matching surrounding skin tone. 
+            <em>$600</em>
+          </p>
+          <p><strong>Scalp (Hair) Micropig</strong><br/>
+            Creates the appearance of hair follicles on the scalp for a fuller look. 
+            <em>$500</em>
+          </p>
+          <p><strong>Areola Micropigmentation</strong><br/>
+            Restores or enhances the color &amp; shape of the areola area. 
+            <em>$650</em>
+          </p>
         </div>
       </div>
 
-      <!-- Right Arrow -->
-      <button class="carousel-btn carousel-btn-right" id="nextBtn">
-        <i class="bi bi-chevron-right"></i>
-      </button>
+      <!-- Eyebrow & Eyelash Services -->
+      <div class="service-card">
+        <img src="service-eyelash.jpg" alt="Eyebrow & Eyelash" class="service-photo"/>
+        <h4>Eyebrow &amp; Eyelash Services</h4>
+        <hr/>
+        <p class="service-description">
+          Perfectly shaped brows and enhanced lashes for a more defined, dramatic look.
+        </p>
+        <div class="service-subitems">
+          <p><strong>Eyelash Extension</strong><br/>
+            Individual lash extensions for added length &amp; volume. 
+            <em>$65</em>
+          </p>
+          <p><strong>Shape Eyebrow &amp; Henna Design</strong><br/>
+            Shaping plus henna for definition &amp; color. 
+            <em>$49</em>
+          </p>
+          <p><strong>Brow Lamination</strong><br/>
+            Smooths &amp; lifts brow hairs for a fuller, uniform shape. 
+            <em>$55</em>
+          </p>
+          <p><strong>Brow Lamination w/ Tint</strong><br/>
+            Adds tint for enhanced color &amp; definition. 
+            <em>$65</em>
+          </p>
+          <p><strong>Brow Lamination w/ Henna</strong><br/>
+            Lamination plus henna for longer-lasting color. 
+            <em>$69</em>
+          </p>
+          <p><strong>Lash Tint</strong><br/>
+            Colors the eyelashes for a darker look without mascara. 
+            <em>$20</em>
+          </p>
+        </div>
+      </div>
+
+      <!-- Waxing Services -->
+      <div class="service-card">
+        <img src="service-waxing.jpg" alt="Waxing Services" class="service-photo"/>
+        <h4>Waxing Services</h4>
+        <hr/>
+        <p class="service-description">
+          Get smooth, hair-free skin with our range of facial and body waxing treatments.
+        </p>
+        <div class="service-subitems">
+          <p><strong>Mustache</strong> - $15</p>
+          <p><strong>Lip</strong> - $10</p>
+          <p><strong>Chin</strong> - $10</p>
+          <p><strong>Side Burns</strong> - $15</p>
+          <p><strong>Full Face</strong> - $25</p>
+          <p><strong>Nose</strong> - $10</p>
+          <p><strong>Back</strong> - $30</p>
+          <p><strong>Shoulders</strong> - $25</p>
+          <p><strong>Legs</strong> - $40</p>
+          <p><strong>Arms</strong> - $25</p>
+          <p><strong>Underarms</strong> - $15</p>
+        </div>
+      </div>
+
+      <!-- Other Services -->
+      <div class="service-card">
+        <img src="service-other.jpg" alt="Other Services" class="service-photo"/>
+        <h4>Other Services</h4>
+        <hr/>
+        <p class="service-description">
+          Additional aesthetic treatments to address various beauty needs, from facials to fillers.
+        </p>
+        <div class="service-subitems">
+          <p><strong>Facial</strong><br/>
+            A multi-step skin treatment for a clean, revitalized complexion. 
+            <em>$65</em>
+          </p>
+          <p><strong>Ear/Eyebrow Piercing</strong><br/>
+            Piercing service (+ $10 for earrings). 
+            <em>$50 + $10</em>
+          </p>
+          <p><strong>Lip Enhancement (Filler)</strong><br/>
+            Adds volume &amp; shape to the lips for a fuller look. 
+            <em>$350</em>
+          </p>
+          <p><strong>Botox Injections</strong><br/>
+            Reduces wrinkles by relaxing targeted muscles. 
+            <em>$300</em>
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section with Instagram & Map -->
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <h2>Our Work</h2>
+    <p>Check out some of our recent photos and videos showcasing our services.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <video src="gallery1.mp4" controls></video>
+      </div>
+      <div class="gallery-item">
+        <video src="gallery3.mp4" controls></video>
+      </div>
+      <div class="gallery-item">
+        <video src="gallery5.mp4" controls></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="section-content">
       <h2>Contact Us</h2>
-      <p>Reach out for more information or to book an appointment.</p>
-
-      <!-- Buttons for Instagram & Map Link -->
+      <p>Contact us for more information or to schedule your consultation. We look forward to assisting you.</p>
       <div class="contact-buttons">
         <a 
-          href="https://instagram.com/YourProfile" 
+          href="https://www.instagram.com/beauty_celia_lyra/" 
           target="_blank" 
           rel="noopener noreferrer"
           class="btn-social"
@@ -180,27 +291,17 @@
           <i class="bi bi-instagram"></i> Follow on Instagram
         </a>
         <a 
-          href="https://goo.gl/maps/YourGoogleMapLocation" 
+          href="https://wa.me/17543263041?text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20services%21" 
           target="_blank" 
           rel="noopener noreferrer"
           class="btn-social"
         >
-          <i class="bi bi-geo-alt-fill"></i> Find Us on Map
+          <i class="bi bi-whatsapp"></i> Book via WhatsApp
         </a>
       </div>
-
-      <!-- Embedded Google Map -->
-      <div class="map-container">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=..." 
-          width="100%" 
-          height="350" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
+      <p class="contact-address">
+        5450 W Hillsboro blvd ste 4, coconut creeck, fl 33073
+      </p>
     </div>
   </section>
 
@@ -208,6 +309,16 @@
   <footer class="footer">
     <p>© 2025 Beauty Celia Lyra USA Corp. All Rights Reserved.</p>
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a 
+    href="https://wa.me/17543263041?text=Hello%2C%20I%27m%20interested%20in%20your%20services%21" 
+    class="floating-whatsapp"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i class="bi bi-whatsapp"></i>
+  </a>
 
   <!-- JavaScript -->
   <script src="script.js"></script>
